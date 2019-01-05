@@ -15,5 +15,7 @@
     "express": "^4.16.4",
     "path": "^0.12.7"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "axios": "^0.18.0"
+  }
 }
