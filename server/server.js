@@ -18,10 +18,10 @@ app.get('/:hotel_id/', (req, res) => {
 
 app.get('/:hotel_id/vacancy', (req, res) => {
     //TODO - your code here!
-    axios.get(`http://traveltipster-fec-booking-service-dev.us-west-2.elasticbeanstalk.com/${req.originalUrl}`)
+    axios.get(`http://traveltipster-fec-booking-service-dev.us-west-2.elasticbeanstalk.com${req.originalUrl}`)
         .then(function (response) {
-            console.log(response);
-            res.send(response);
+            console.log(response.data);
+            res.send(response.data);
         })
         .catch(function (error) {
             console.log(error);
